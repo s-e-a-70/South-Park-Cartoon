@@ -4,12 +4,13 @@
  Описание используемых функций
  
  Рисование элементов пейзажа
- 
+```` 
  1. Рисование фона
  void Draw_Background (COLORREF Sky_Color,    - цвет неба
                       COLORREF Ground_Color)  - цвет земли;
                       
- 2. Рисование горы
+````
+2. Рисование горы
  void Draw_Mountain(int x,                    - координата X вершины
                     int y,                    - координата Y вершины 
                     COLORREF Mountain_Color)  - цвет
