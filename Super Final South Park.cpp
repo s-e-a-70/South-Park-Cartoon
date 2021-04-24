@@ -1057,7 +1057,7 @@ void Draw_Eyes(int x, int y, float sizeX, float sizeY, int Jump, int Close_Eyes,
 void Draw_Mouth(int x, int y, float sizeX, float sizeY, int Jump, int Open_Mouth, int Turn_Left, int Turn_Right)
 {
 
-    txSetColor     (TX_BLACK, 3 ;
+    txSetColor     (TX_BLACK, 3);
 
     txEllipse      (x - 10 * sizeX - 20 * Turn_Left * sizeX + 30 * Turn_Right * sizeX, y + 30 * sizeY + Jump,
 
