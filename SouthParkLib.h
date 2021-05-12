@@ -11,17 +11,39 @@
 
 void Draw_Body           (int x, int y, float sizeX, float sizeY, int Jump, COLORREF Color, int is_Cartman);
 //=================================================================================================================
-//! @brief Рисует туловище героя
+//! @brief Рисование туловище героя
 //! @note  Центр фигуры героя - центр окружности головы)))
 
-//! @param x - координата центра фигуры героя по оси Х
-
-
+//! @param         int x              - координата X центра фигуры героя (центр головы) 
+//! @param         int y              - координата Y центра фигуры героя (центр головы) 
+//! @param         float sizeX        - масштабный коэффициент по оси X                     
+//! @param         float sizeY        - масштабный коэффициент по оси Y
+//! @param         int Jump           - высота прыжка
+//! @param         COLORREF Color     - цвет 
+//! @param         int is_Cartman     - признак Картмана (0 - это не Картман, 1 - это Картман)
+//=================================================================================================================
 void Draw_Left_Hand      (int x, int y, float sizeX, float sizeY, int Jump, int Rise_Left_Hand, int Stretch_Left_Hand,
 
                           COLORREF Hand_Color, COLORREF Wrist_Color,
 
                           int Turn_Left, int Turn_Right, int is_Cartman);
+
+//! @brief Рисование левой руки
+//! @note  Центр фигуры героя - центр окружности головы)))
+//! @param int x                    - координата X центра героя (центр головы) 
+//! @param int y                    - координата Y центра героя (центр головы) 
+//! @param float sizeX              - масштабный коэффициент по оси X 
+//! @param float sizeY              - масштабный коэффициент по оси Y 
+//! @param int Jump                 - высота прыжка
+//! @param int Rise_Left_Hand       - признак поднятия левой руки (0 - нет поднятия руки , 1 - есть поднятие руки ) 
+//! @param int Stretch_Left_Hand    - признак вытягивания левой руки (0 - нет вытягивания руки , 1 - есть вытягивание руки ) 
+//! @param COLORREF Hand_Color      - цвет руки
+//! @param COLORREF Wrist_Color     - цвет кисти
+//! @param int Turn_Left            - признак поворота героя влево (0 - нет поворота влево, 1 - есть поворот влево) 
+//! @param int Turn_Right           - признак поворота героя вправо (0 - нет поворота вправо, 1 - есть поворот вправо) 
+//! @param int is_Cartman          -  признак Картмана (0 - это не Картман, 1 - это Картман)
+
+//=================================================================================================================
 
 void Draw_Right_Hand     (int x, int y, float sizeX, float sizeY, int Jump, int Rise_Right_Hand, int Stretch_Right_Hand,
 
@@ -29,21 +51,101 @@ void Draw_Right_Hand     (int x, int y, float sizeX, float sizeY, int Jump, int 
 
                           int Turn_Left, int Turn_Right, int is_Cartman);
 
+//! @brief Рисование правой руки
+//! @note  Центр фигуры героя - центр окружности головы)))
+//! @param int x                    - координата X центра героя (центр головы) 
+//! @param int y                    - координата Y центра героя (центр головы) 
+//! @param float sizeX              - масштабный коэффициент по оси X 
+//! @param float sizeY              - масштабный коэффициент по оси Y 
+//! @param int Jump                 - высота прыжка
+//! @param int Rise_Right_Hand      - признак поднятия правой руки (0 - нет поднятия руки , 1 - есть поднятие руки ) 
+//! @param int Stretch_Right_Hand   - признак вытягивания правой руки (0 - нет вытягивания руки , 1 - есть вытягивание руки ) 
+//! @param COLORREF Hand_Color      - цвет руки
+//! @param COLORREF Wrist_Color     - цвет кисти
+//! @param int Turn_Left            - признак поворота героя влево (0 - нет поворота влево, 1 - есть поворот влево) 
+//! @param int Turn_Right           - признак поворота героя вправо (0 - нет поворота вправо, 1 - есть поворот вправо) 
+//! @param int is_Cartman           - признак Картмана (0 - это не Картман, 1 - это Картман)
+//=================================================================================================================
+
 void Draw_Face           (int x, int y, float sizeX, float sizeY, int Jump, COLORREF Face_Color, int is_Cartman);
+//! @brief Рисование лица
+//! @note  Центр фигуры героя - центр окружности головы)))
+//! @param int x                     - координата X центра героя (центр головы) 
+//! @param int y                     - координата Y центра героя (центр головы)  
+//! @param float sizeX               - масштабный коэффициент по оси X 
+//! @param float sizeY               - масштабный коэффициент по оси Y
+//! @param int Jump                  - высота прыжка
+//! @param COLORREF Face_Color       - цвет
+//! @param int is_Cartman            - признак Картмана (0 - это не Картман, 1 - это Картман)
+//=================================================================================================================
 
 void Draw_Eyes           (int x, int y, float sizeX, float sizeY, int Jump, int Close_Eyes, int Turn_Left, int Turn_Right);
+//! @brief Рисование глаз
+//! @note  Центр фигуры героя - центр окружности головы)))
+//! @param int x                      - координата X центра героя (центр головы)  
+//! @param int y                      - координата Y центра героя (центр головы)  
+//! @param float sizeX                - масштабный коэффициент по оси X
+//! @param float sizeY                - масштабный коэффициент по оси Y 
+//! @param int Jump                   - высота прыжка
+//! @param int Close_Eyes             - признак закрытия глаз (0 - нет закрытия глаз, 1 - есть закрытие глаз) 
+//! @param int Turn_Left              - признак поворота героя влево (0 - нет поворота влево, 1 - есть поворот влево)
+//! @param int Turn_Right             - признак поворота героя вправо (0 - нет поворота вправо, 1 - есть поворот вправо)
+//=================================================================================================================
 
 void Draw_Mouth          (int x, int y, float sizeX, float sizeY, int Jump, int Open_Mouth, int Turn_Left, int Turn_Right);
+//! @brief Рисование рта
+//! @note  Центр фигуры героя - центр окружности головы)))
+//! @param int x                      - координата X центра героя (центр головы)
+//! @param int y                      - координата Y центра героя (центр головы)  
+//! @param float sizeX                - масштабный коэффициент по оси X                   
+//! @param float sizeY                - масштабный коэффициент по оси Y                 
+//! @param int Jump                   - высота прыжка
+//! @param int Open_Mouth             - признак открытого рта (0 - нет зоткрытого рта , 1 - есть открытый рот) 
+//! @param int Turn_Left              - признак поворота героя влево (0 - нет поворота влево, 1 - есть поворот влево)
+//! @param int Turn_Right             - признак поворота героя вправо (0 - нет поворота вправо, 1 - есть поворот вправо)
+//=================================================================================================================
 
 void Draw_Legs           (int x, int y, float sizeX, float sizeY,int Jump, int is_Cartman);
-
+//! @brief Рисование ног
+//! @param int x                      - координата X центра героя (центр головы)
+//! @param int y,                     - координата Y центра героя (центр головы) 
+//! @param float sizeX,               - масштабный коэффициент по оси X 
+//! @param float sizeY,               - масштабный коэффициент по оси Y                 
+//! @param int Jump,                  - высота прыжка
+//! @param int is_Cartman             - признак Картмана (0 - это не Картман, 1 - это Картман)
+//=================================================================================================================
 
 void Draw_Hat            (int x, int y, float sizeX, float sizeY,int Jump, COLORREF Hat_Color, COLORREF Pompon_Color, int is_Cartman);
-
+//! @brief Рисование шапки 
+//! @param int x                      - координата X центра героя (центр головы)
+//! @param int y                      - координата Y центра героя (центр головы)
+//! @param float sizeX                - масштабный коэффициент по оси X 
+//! @param float sizeY                - масштабный коэффициент по оси Y 
+//! @param int Jump                   - высота прыжка
+//! @param COLORREF Hat_Color         - цвет шапки
+//! @param COLORREF Pompon_Color      - цвет помпона
+//! @param int is_Cartman             - признак Картмана (0 - это не Картман, 1 - это Картман)
+//=================================================================================================================
 void Draw_Broflovsky_Hat (int x, int y, float sizeX, float sizeY,int Jump, int Turn_Left, int Turn_Right);
+//! @brief Рисование шапки Брофловского
+//! @param int x              - координата X центра героя (центр головы)
+//! @param int y              - координата Y центра героя (центр головы)
+//! @param float sizeX        - масштабный коэффициент по оси X
+//! @param float sizeY        - масштабный коэффициент по оси Y
+//! @param int Jump           - высота прыжка
+//! @param int Turn_Left      - признак поворота героя влево (0 - нет поворота влево, 1 - есть поворот влево)
+//! @param int Turn_Right     - признак поворота героя вправо (0 - нет поворота вправо, 1 - есть поворот вправо)
 
-void Draw_Kenny_Had      (int x, int y, float sizeX, float sizeY,int Jump);
+//=================================================================================================================
+void Draw_Kenny_Had      (int x, int y, float sizeX, float sizeY, int Jump);
+//! @brief Рисование головы Кенни
+//! @param int x              - координата X центра героя (центр головы)
+//! @param int y              - координата Y центра героя (центр головы)
+//! @param float sizeX        - масштабный коэффициент по оси X
+//! @param float sizeY        - масштабный коэффициент по оси Y
+//! @param int Jump           - высота прыжка
 
+//=================================================================================================================
 void Draw_Sten           (int x, int y, float sizeX, float sizeY,
 
                           COLORREF Body_Color, COLORREF Face_Color, COLORREF Wrist_Color,
@@ -51,43 +153,148 @@ void Draw_Sten           (int x, int y, float sizeX, float sizeY,
                           int Rise_Left_Hand, int Rise_Right_Hand, int Stretch_Left_Hand, int Stretch_Right_Hand, int Close_Eyes,
 
                           int Open_Mouth, int Jump, int Turn_Left, int Turn_Right );
+//=================================================================================================================
+//! @brief Рисование Стена Марша
+//! @param int x                   - координата X центра героя (центр головы) 
+//! @param int y                   - координата Y центра героя (центр головы)
+//! @param float sizeX             - масштабный коэффициент по оси X
+//! @param float sizeY             - масштабный коэффициент по оси Y
+//! @param COLORREF Body_Color     - цвет туловища 
+//! @param COLORREF Face_Color     - цвет лица 
+//! @param COLORREF Wrist_Color    - цвет кисти рук
+//! @param int Rise_Left_Hand      - признак поднятия левой руки (0 - нет поднятия руки , 1 - есть поднятие руки ) 
+//! @param int Rise_Right_Hand     - признак поднятия правой руки (0 - нет поднятия руки , 1 - есть поднятие руки ) 
+//! @param int Stretch_Left_Hand   - признак вытягивания левой руки (0 - нет вытягивания руки , 1 - есть выиягивание руки ) 
+//! @param int Stretch_Right_Hand  - признак вытягивания правой руки (0 - нет вытягивания руки , 1 - есть выиягивание руки ) 
+//! @param int Close_Eyes,         - признак закрытия глаз (0 - нет закрытия глаз, 1 - есть закрытие глаз)
+//! @param int Open_Mouth,         - признак открытого рта (0 - нет зоткрытого рта , 1 - есть открытый рот) 
+//! @param int Jump,               - высота прыжка
+//! @param int Turn_Left,          - признак поворота героя влево (0 - нет поворота влево, 1 - есть поворот влево)
+//! @param int Turn_Right          - признак поворота героя вправо (0 - нет поворота вправо, 1 - есть поворот вправо)              
+//=================================================================================================================
 
 void Draw_Broflovsky     (int x, int y, float sizeX, float sizeY, COLORREF Body_Color, COLORREF Face_Color, COLORREF Wrist_Color,
 
                           int Rise_Left_Hand, int Rise_Right_Hand, int Stretch_Left_Hand, int Stretch_Right_Hand, int Close_Eyes,
 
                           int Open_Mouth, int Jump, int Turn_Left, int Turn_Right );
-
+//=================================================================================================================
+//! @brief Рисование Кайла Брофловски
+//! @param int x                   - координата X центра героя (центр головы) 
+//! @param int y                   - координата Y центра героя (центр головы)
+//! @param float sizeX             - масштабный коэффициент по оси X
+//! @param float sizeY             - масштабный коэффициент по оси Y
+//! @param COLORREF Body_Color     - цвет туловища 
+//! @param COLORREF Face_Color     - цвет лица 
+//! @param COLORREF Wrist_Color    - цвет кисти рук
+//! @param int Rise_Left_Hand      - признак поднятия левой руки (0 - нет поднятия руки , 1 - есть поднятие руки ) 
+//! @param int Rise_Right_Hand     - признак поднятия правой руки (0 - нет поднятия руки , 1 - есть поднятие руки ) 
+//! @param int Stretch_Left_Hand   - признак вытягивания левой руки (0 - нет вытягивания руки , 1 - есть выиягивание руки ) 
+//! @param int Stretch_Right_Hand  - признак вытягивания правой руки (0 - нет вытягивания руки , 1 - есть выиягивание руки ) 
+//! @param int Close_Eyes,         - признак закрытия глаз (0 - нет закрытия глаз, 1 - есть закрытие глаз)
+//! @param int Open_Mouth,         - признак открытого рта (0 - нет зоткрытого рта , 1 - есть открытый рот) 
+//! @param int Jump,               - высота прыжка
+//! @param int Turn_Left,          - признак поворота героя влево (0 - нет поворота влево, 1 - есть поворот влево)
+//! @param int Turn_Right          - признак поворота героя вправо (0 - нет поворота вправо, 1 - есть поворот вправо)  
+//=================================================================================================================
 void Draw_Kenny          (int x, int y, float sizeX, float sizeY, COLORREF Body_Color, COLORREF Face_Color, COLORREF Wrist_Color,
 
                           int Rise_Left_Hand, int Rise_Right_Hand, int Stretch_Left_Hand, int Stretch_Right_Hand, int Close_Eyes, int Jump, int Turn_Left, int Turn_Right);
+//=================================================================================================================
+//! @brief Рисование Кенни Маккормика
+//! @param int x                   - координата X центра героя (центр головы) 
+//! @param int y                   - координата Y центра героя (центр головы)
+//! @param float sizeX             - масштабный коэффициент по оси X
+//! @param float sizeY             - масштабный коэффициент по оси Y
+//! @param COLORREF Body_Color     - цвет туловища 
+//! @param COLORREF Face_Color     - цвет лица 
+//! @param COLORREF Wrist_Color    - цвет кисти рук
+//! @param int Rise_Left_Hand      - признак поднятия левой руки (0 - нет поднятия руки , 1 - есть поднятие руки ) 
+//! @param int Rise_Right_Hand     - признак поднятия правой руки (0 - нет поднятия руки , 1 - есть поднятие руки ) 
+//! @param int Stretch_Left_Hand   - признак вытягивания левой руки (0 - нет вытягивания руки , 1 - есть выиягивание руки ) 
+//! @param int Stretch_Right_Hand  - признак вытягивания правой руки (0 - нет вытягивания руки , 1 - есть выиягивание руки ) 
+//! @param int Close_Eyes,         - признак закрытия глаз (0 - нет закрытия глаз, 1 - есть закрытие глаз)
+//! @param int Jump,               - высота прыжка
+//! @param int Turn_Left,          - признак поворота героя влево (0 - нет поворота влево, 1 - есть поворот влево)
+//! @param int Turn_Right          - признак поворота героя вправо (0 - нет поворота вправо, 1 - есть поворот вправо)    
+//=================================================================================================================
 
 void Draw_Cartman        (int x, int y, float sizeX, float sizeY, COLORREF Body_Color, COLORREF Face_Color, COLORREF Wrist_Color,
 
                           int Rise_Left_Hand, int Rise_Right_Hand, int Stretch_Left_Hand, int Stretch_Right_Hand, int Close_Eyes,
 
                           int Open_Mouth, int Jump, int Turn_Left, int Turn_Right);
-
+//=================================================================================================================
+//! @brief Рисование Эрика Картмана
+//! @param int x                   - координата X центра героя (центр головы) 
+//! @param int y                   - координата Y центра героя (центр головы)
+//! @param float sizeX             - масштабный коэффициент по оси X
+//! @param float sizeY             - масштабный коэффициент по оси Y
+//! @param COLORREF Body_Color     - цвет туловища 
+//! @param COLORREF Face_Color     - цвет лица 
+//! @param COLORREF Wrist_Color    - цвет кисти рук
+//! @param int Rise_Left_Hand      - признак поднятия левой руки (0 - нет поднятия руки , 1 - есть поднятие руки ) 
+//! @param int Rise_Right_Hand     - признак поднятия правой руки (0 - нет поднятия руки , 1 - есть поднятие руки ) 
+//! @param int Stretch_Left_Hand   - признак вытягивания левой руки (0 - нет вытягивания руки , 1 - есть выиягивание руки ) 
+//! @param int Stretch_Right_Hand  - признак вытягивания правой руки (0 - нет вытягивания руки , 1 - есть выиягивание руки ) 
+//! @param int Close_Eyes,         - признак закрытия глаз (0 - нет закрытия глаз, 1 - есть закрытие глаз)
+//! @param int Open_Mouth,         - признак открытого рта (0 - нет зоткрытого рта , 1 - есть открытый рот) 
+//! @param int Jump,               - высота прыжка
+//! @param int Turn_Left,          - признак поворота героя влево (0 - нет поворота влево, 1 - есть поворот влево)
+//! @param int Turn_Right          - признак поворота героя вправо (0 - нет поворота вправо, 1 - есть поворот вправо)  
+//=================================================================================================================
 
 void Draw_Landscape_Town ();
+//! @brief Рисование городского пейзажа
 
+//=================================================================================================================
 void Draw_Mountain_Chain ();
-
-
+//! @brief Рисование горной цепи
+//=================================================================================================================
 void Draw_Trap           (COLORREF Ground_Color, COLORREF Trap_Color);
+//! @brief Рисование канализационного люка
+//! @param COLORREF Ground_Color          - цвет земли 
+//! @param COLORREF Trap_Color            - цвет люка
 
+//=================================================================================================================
 void Draw_Background     (COLORREF Sky_Color,    COLORREF Ground_Color);
-
+//! @brief Рисование фона
+//! @param COLORREF Sky_Color    - цвет неба
+//! @param COLORREF Ground_Color  - цвет земли                      
+//=================================================================================================================
 void Draw_Mountain       (int x, int y,          COLORREF Mountain_Color );
+//! @brief Рисование горы
+//! @param int x                    - координата X вершины
+//! @param int y                    - координата Y вершины 
+//! @param COLORREF Mountain_Color  - цвет
 
+//=================================================================================================================
 void Draw_Fir_tree       (int x, int y, int swing, COLORREF Fir_Tree_Color);
+//! @brief Рисование елки
+//! @param int x                   - координата X левой точки нижней ветки
+//! @param int y                   - координата Y левой точки нижней ветки 
+//! @param COLORREF Fir_Tree_Color - цвет елки
+//=================================================================================================================
 
 void Draw_Table          (int x, int y, float sizeX, float sizeY, COLORREF Table_Color);
+//! @brief Рисование таблички "South Park"
+//! @param int x                       - координата X левого верхнего угла
+//! @param int y                       - координата Y левого верхнего угла 
+//! @param float sizeX                 - масштабный коэффициент по оси X
+//! @param float sizeY                 - масштабный коэффициент по оси Y
+//! @param COLORREF Table_Color        - цвет  
 
+//=================================================================================================================
 void Draw_Window         (int x, int y, int lx,      int ly);
+//! @brief Рисование окна дома
+int x,                        - координата X левого верхнего угла 
+int y,                        - координата Y левого верхнего угла   
+int lx,                       - ширина
+                 int ly)                       - высота
 
+//=================================================================================================================
 void Draw_Landscape_Forrest (int swing);
-
+//=================================================================================================================
 
 
 void Draw_Body           (int x, int y, float sizeX, float sizeY, int Jump, COLORREF Color, int is_Cartman)
